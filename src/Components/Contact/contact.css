@@ -1,0 +1,130 @@
+#contactPage{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactPageTitle{
+    font-size: 4rem;
+    letter-spacing: -3.5px;
+    line-height: 55px;
+}
+.contactPageP{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+.clientDesc{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.clientImgs{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.clientImg{
+    object-fit: cover;
+    width: 75px;
+    height: auto;
+    margin-left: 30px;
+}
+
+
+#clients{
+    padding: 5px;
+}
+#contact{
+    padding-top: 2.5%;
+}
+.contactDesc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+.contactForm{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+    flex-basis: 60%;
+  
+}
+.name, .email, .msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: wheat;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(78, 0, 0);
+}
+.name::placeholder, 
+.email::placeholder, 
+.msg::placeholder {
+  color: wheat /* Change the placeholder color */
+}
+
+.submitBtn {
+    background: rgb(78, 0, 0);
+    border: none;
+    color: wheat;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.submitBtn:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    background-color: rgb(37, 0, 0);
+
+}
+
+
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin:0 0.75rem;
+    margin-bottom: 6rem;
+    transition: transform 0.10s;
+    cursor: pointer;
+
+
+
+}
+.link:hover{
+    color: #c00026;
+    transform: translateY(-5px);
+}
+.link:active {
+    filter: brightness(0.8); 
+  }
+  
+
+
+@media screen and (max-width: 640px) {
+    .contactPageTitle {
+      font-size: 3rem; /* Adjust the font size */
+    }
+  }
+  
+
+
+

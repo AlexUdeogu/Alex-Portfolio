@@ -1,0 +1,158 @@
+.navbar{
+    background: rgb(30, 30, 30);
+    height: 4rem;
+    width: 30vw;
+    margin: 0px auto;
+    padding: 0.1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 80%;
+    z-index: 3;
+    background-color: rgba(128, 128, 128, 0.15); 
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.desktopMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktopMenuListItem {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: block;
+    padding: auto;
+}
+
+.desktopMenuListItem:hover{
+    color:  rgb(255, 191, 73);
+    transition: 0.2s;
+}
+
+
+
+.desktopMenuBtn{
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+
+
+.desktopMenImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+
+
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+}
+.listItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width: 1300px) and (min-width: 640px){
+    .desktopMenu{
+        font-size: 15px;
+    }
+    .navbar{
+        height: 4rem;
+        width: 60vw;
+        margin: 0px auto;
+        padding: 0.1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 639px) and (min-width: 430px){
+    .desktopMenu{
+        font-size: 8px;
+    }
+    .navbar{
+        height: 3rem;
+        width: 60vw;
+        margin: 0px auto;
+        padding: 0.1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        
+    }
+    .desktopMenuListItem {
+        font-size: 12px;
+        margin-top: 12px;
+        margin-bottom: auto;
+        margin-left: 3px;
+        margin-right: 3px;
+        
+    }
+}
+@media screen and (max-width: 429px) and (min-width: 320px){
+
+    .navbar{
+        height: 3rem;
+        width: 75vw;
+        margin: 0px auto;
+        padding: 0.1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        
+    }
+    .desktopMenu{
+        font-size: 10px;
+    }
+
+    .desktopMenuListItem {
+        font-size: 12px;
+        margin-top: 12px;
+        margin-bottom: auto;
+        margin-left: 3px;
+        margin-right: 3px;
+        
+    }
+}
