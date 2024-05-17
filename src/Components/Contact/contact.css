@@ -75,7 +75,7 @@
 .name::placeholder, 
 .email::placeholder, 
 .msg::placeholder {
-  color: wheat /* Change the placeholder color */
+  color: wheat;
 }
 
 .submitBtn {
